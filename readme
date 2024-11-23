@@ -8,14 +8,11 @@ This endpoint returns the full Quran's content information, including sources an
 
 https://api-oneislam.vercel.app/api/quran
 
-
 ## Language-Specific Endpoints
 
 To access the Quran in specific languages, replace `{language}` with your desired language code. For example:
 
 https://api-oneislam.vercel.app/api/quran/{language}
-
-
 
 ### Available Versions
 
@@ -30,14 +27,12 @@ For each language, the API provides three versions:
 1. **Original**: 
 https://api-oneislam.vercel.app/api/quran/Arabic/original
 
-
-**Latin**:
+2. **Latin**:
 https://api-oneislam.vercel.app/api/quran/Arabic/latin
 
-  
 3. **Latin Diacritical**:
 https://api-oneislam.vercel.app/api/quran/Arabic/latin-diacritical
- 
+
 - **English**: `https://api-oneislam.vercel.app/api/quran/English`
 - **Arabic**: `https://api-oneislam.vercel.app/api/quran/Arabic`
 - **French**: `https://api-oneislam.vercel.app/api/quran/French`
@@ -49,10 +44,6 @@ https://api-oneislam.vercel.app/api/quran/Arabic/latin-diacritical
 The API supports 95+ languages. Replace `Arabic` with any of the following languages from the array provided:
 
 https://api-oneislam.vercel.app/api/quran/Arabic/original
-
-
-
-
 
 ```javascript
 export const languagesArray = [
@@ -154,9 +145,3 @@ export const languagesArray = [
     "Yoruba",
     "Zulu"
 ];
-
-
-
-
-
-
