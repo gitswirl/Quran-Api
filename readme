@@ -1,26 +1,21 @@
+# Quran API Documentation
 
- # Quran API Documentation
-
-This API provides access to the full Quran in over 95+ languages, including Latin and Latin diacritical versions.
-You can retrieve the Quran's content, translation, and additional information in different formats depending on the language.
+This API provides access to the full Quran in over 95+ languages, including Latin and Latin diacritical versions. You can retrieve the Quran's content, translation, and additional information in different formats depending on the language.
 
 ## Base API Endpoint
 
-This endpoint returns the full Quran's content information, including sources, and links, for any specified language.
-The base URL for the API is:
+This endpoint returns the full Quran's content information, including sources and links, for any specified language. The base URL for the API is:
 
 https://api-oneislam.vercel.app/api/quran
- 
+
 
 ## Language-Specific Endpoints
 
 To access the Quran in specific languages, replace `{language}` with your desired language code. For example:
 
----
-
 https://api-oneislam.vercel.app/api/quran/{language}
- 
- ---
+
+
 
 ### Available Versions
 
@@ -33,32 +28,33 @@ For each language, the API provides three versions:
 ### Example Endpoints for Urdu (Replace `Arabic` with any supported language code)
 
 1. **Original**: 
-https://api-oneislam.vercel.app/api/quran/Arabic/orignal
+https://api-oneislam.vercel.app/api/quran/Arabic/original
 
----
- 
-2. **Latin**:
- 
+
+**Latin**:
 https://api-oneislam.vercel.app/api/quran/Arabic/latin
 
- ---
+  
 3. **Latin Diacritical**:
 https://api-oneislam.vercel.app/api/quran/Arabic/latin-diacritical
-
- --
-- **English**: `https://api-oneislam.vercel.app/api/quran/English `
+ 
+- **English**: `https://api-oneislam.vercel.app/api/quran/English`
 - **Arabic**: `https://api-oneislam.vercel.app/api/quran/Arabic`
 - **French**: `https://api-oneislam.vercel.app/api/quran/French`
 - **Spanish**: `https://api-oneislam.vercel.app/api/quran/Spanish`
-And many more...
+- And many more...
+
+## Supported Languages
+
+The API supports 95+ languages. Replace `Arabic` with any of the following languages from the array provided:
+
+https://api-oneislam.vercel.app/api/quran/Arabic/original
 
 
- ### Supported Languages 
-The API supports 95+ languages. Replace `Arabic` with any of the following language from array we provide:
- 
-https://api-oneislam.vercel.app/api/quran/Arabic/orignal
-```bash
- 
+
+
+
+```javascript
 export const languagesArray = [
     "Achinese",
     "Afar",
@@ -156,6 +152,11 @@ export const languagesArray = [
     "Xhosa",
     "Yau",
     "Yoruba",
-    "Zulu",
+    "Zulu"
 ];
-```
+
+
+
+
+
+
