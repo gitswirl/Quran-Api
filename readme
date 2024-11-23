@@ -1,4 +1,5 @@
-# Quran API Documentation
+
+ # Quran API Documentation
 
 This API provides access to the full Quran in over 95+ languages, including Latin and Latin diacritical versions.
 You can retrieve the Quran's content, translation, and additional information in different formats depending on the language.
@@ -166,8 +167,3 @@ export const languagesArray = [
     "Yoruba",
     "Zulu",
 ];
-
-
-
- 
- 
